@@ -1,0 +1,72 @@
+baseURL = "https://churchofubiquiti.com/"
+languageCode = "en-us"
+theme = "blackburn"
+title = "Church of Ubiquiti"
+author = "Kello & Tristor"
+copyright = "&copy; 2017 <a href='https://creativecommons.org/licenses/by-sa/4.0/'>Licensed CC:By-SA</a>"
+canonifyurls = true
+paginate = 10
+
+[permalinks]
+  post = "/blog/:year/:month/:day/:title/"
+  page = "/:filename/"
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
+
+[params]
+  # Shown in the home page
+  subtitle = "Worship Your Network"
+  brand = "Church<br>of<br>Ubiquiti"
+  #googleAnalytics = ""
+  #disqus = ""
+  # CSS name for highlight.js
+  highlightjs = "androidstudio"
+  dateFormat = "02 Jan 2006, 15:04"
+  # Custom CSS
+  #custom_css =
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 0
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 1
+    identifier = "about"
+    url = "/about/"
+  [[menu.main]]
+    name = "Posts"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 2
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "Topics"
+    pre = "<i class='fa fa-folder fa-fw'></i>"
+    weight = 4
+    identifier = "topic"
+    url = "/topics/"
+  [[menu.main]]
+    name = "Tags"
+    pre = "<i class='fa fa-tags fa-fw'></i>"
+    weight = 5
+    identifier = "tag"
+    url = "/tags/"
+
+#[social]
+  # Link your social networking accouns to the side menu
+  # by entering your username or ID.
+  # flickr = ""
+  # twitter = ""
+  # github = ""
+  # linkedin = ""
+  # hackernews = ""
+  # reddit = ""
+  # instagram = ""
